@@ -25,9 +25,9 @@ namespace Order.Tests
     public void GetTotal_ShouldReturnDiscountedPriceIfModuloThreeEqualsZero_Bread()
     {
       int quantity = 6;
-      int pricing = 3;
+      int pricing = 5;
       Bread sourdough = new Bread(quantity, pricing);
-      int total = sourdough.GetTotal(sourdough.Quantity, sourdough.Price);
+      int total = Bread.GetTotal(sourdough.Quantity, sourdough.Price);
       Assert.AreEqual(12, total);
     }
   }

@@ -9,7 +9,7 @@ public class Bread
       Quantity = quantity;
       Price = price;
     }
-    public int GetTotal(int quantity, int price)
+    public static int GetTotal(int quantity, int price)
     {
       int total = 0;
       Bread bread = new Bread(quantity, price);

@@ -1,4 +1,4 @@
-# _{My Eighth Code Review}_
+# _{Pierre's Bakery: My Eighth Code Review at Epicodus}_
 
 #### By Zachary Green
 

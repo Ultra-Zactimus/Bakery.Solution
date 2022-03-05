@@ -9,7 +9,7 @@ namespace Order.Model
       Quantity = quantity;
       Price = price;
     }
-    public int GetTotal(int quantity, int price)
+    public static int GetTotal(int quantity, int price)
     {
       int total = 0;
       Pastry pastry = new Pastry(quantity, price);
