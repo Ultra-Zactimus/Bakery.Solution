@@ -14,7 +14,7 @@ _{This application is a Bakery where the user can buy a bread or pastries. Tell 
 
 ## Setup/Installation Requirements
 
-* Visit https://github.com/Ultra-Zactimus/myEighthCodeReview
+* Visit https://github.com/Ultra-Zactimus/Bakery.Solution
 * Click on Clone, to grab the .git file.
 * In the terminal naviate to your desktop, then run "$ git clone " + "that the .git you copied from GitHub" and press enter.
 * Rename the folder to Bakery.Solution
