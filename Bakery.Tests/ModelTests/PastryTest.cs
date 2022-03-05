@@ -7,14 +7,14 @@ namespace Order.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void Pastry_CreateAnInstanceOfPastryObject_NewPastry()
+    public void Pastry_CreateAnInstanceOfPastryObject_Object()
     {
       Pastry pastry = new Pastry(2,2);
       Assert.AreEqual(typeof(Pastry), pastry.GetType());
     }
 
     [TestMethod]
-    public void Pastry_ShouldReturnValuesOfArguments_NewPastry()
+    public void Pastry_ShouldReturnValuesOfArguments_Int()
     {
       int pricing = 2;
       Pastry pastry = new Pastry(0, pricing);
@@ -22,12 +22,12 @@ namespace Order.Tests
     }
 
     [TestMethod]
-    public void GetTotal_ShouldReturnDiscountedPriceIfModuloThreeEqualsZero_Pastry()
+    public void GetTotal_ShouldReturnDiscountedPriceForEveryThirdItem_Int()
     {
       int quantity = 6;
       int pricing = 2;
       Pastry pastry = new Pastry(quantity, pricing);
-      int total = pastry.GetTotal(pastry.Quantity, pastry.Price);
+      int total = Pastry.GetTotal(pastry.Quantity, pastry.Price);
       Assert.AreEqual(10, total);
     }
   }
